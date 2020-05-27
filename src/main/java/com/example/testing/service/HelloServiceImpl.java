@@ -1,4 +1,4 @@
-package com.example.testing;
+package com.example.testing.service;
 
 import org.apache.dubbo.config.annotation.Service;
 
