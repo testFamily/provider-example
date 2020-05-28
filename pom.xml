@@ -8,7 +8,7 @@
         <version>2.2.7.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.example</groupId>
+    <groupId>com.example.provider</groupId>
     <artifactId>testing</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>testing</name>
@@ -76,8 +76,19 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
             </plugin>
         </plugins>
     </build>
+
+    <distributionManagement>
+        <repository>
+            <id>testing</id>
+            <name>Nexus testing Repository</name>
+            <url>http://47.98.62.6:8082/repository/testing/</url>
+        </repository>
+    </distributionManagement>
 
 </project>
