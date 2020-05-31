@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: testing-provider-example
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      config:
+        server-addr: 47.98.62.6:8848
+        enabled: true
+        file-extension: yaml
+        namespace: 34e286c3-c5fc-44fb-94d6-a1171cfda3d1
+      discovery:
+        server-addr: 47.98.62.6:8848
+        enabled: true
+        register-enabled: true
+        namespace: 34e286c3-c5fc-44fb-94d6-a1171cfda3d1

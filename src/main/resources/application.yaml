@@ -1,0 +1,22 @@
+spring:
+  profiles:
+    active: dev
+
+server:
+  port: 8002
+
+dubbo:
+  scan:
+    base-packages: com.example.testing.service
+  protocols:
+    dubbo:
+      name: dubbo
+      port: -1
+  registry:
+    address: spring-cloud://47.98.62.6:8848
+  application:
+    qos:
+      enable: false
+
+local:
+  name: xiao
