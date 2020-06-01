@@ -15,8 +15,8 @@ dubbo:
   registry:
     address: spring-cloud://47.98.62.6:8848
   application:
-    qos:
-      enable: false
+    qos-enable: false
+    name: testing-provider-example
 
 local:
   name: xiao
